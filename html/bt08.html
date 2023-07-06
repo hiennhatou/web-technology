@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 08</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Chương trình nghe nhạc</h1>
+      <audio controls>
+        <source src="/assets/audio/iphone-ringtone.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <table style="width: 100%">
+      <thead>
+        <th style="width: 50%">
+          <h1>Chương trình xem video</h1>
+        </th>
+        <th style="width: 50%">
+          <h1>Xem video trên Youtube</h1>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <video
+              width="100%"
+              style="aspect-ratio: 16/9"
+              controls
+              autoplay
+              muted
+            >
+              <source src="/assets/video/cat.mp4" type="video/mp4" />
+            </video>
+          </td>
+          <td>
+            <iframe
+              style="width: 100%; aspect-ratio: 16/9"
+              src="https://www.youtube.com/embed/z4aoLLaV4-4?mute=1"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
